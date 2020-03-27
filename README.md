@@ -1,6 +1,6 @@
-# TakaakiMizuno/VideoServiceUrlAnalyzer
+# Overview
 
-Analyze Video URL of each video service ( YouTube, Vimeo ... ) and extract information.
+This library is to analyze a video URL (YouTube, Vimeo, Aparat, ... ) and extract information.
 
 ## How To Use
 
@@ -8,4 +8,4 @@ Analyze Video URL of each video service ( YouTube, Vimeo ... ) and extract infor
 
 ## License
 
-This library is available under the MIT license. See the LICENSE file for more info.
+This library is available under the MIT license.

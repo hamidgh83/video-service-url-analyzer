@@ -1,7 +1,7 @@
 <?php
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Analyzers;
+namespace VideoUrlAnalyzer\Analyzers;
 
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\YouTube as YouTubeEntity;
+use VideoUrlAnalyzer\Entities\YouTube as YouTubeEntity;
 
 class YouTube extends Base
 {

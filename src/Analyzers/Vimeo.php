@@ -1,7 +1,7 @@
 <?php
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Analyzers;
+namespace VideoUrlAnalyzer\Analyzers;
 
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\Vimeo as VimeoEntity;
+use VideoUrlAnalyzer\Entities\Vimeo as VimeoEntity;
 
 class Vimeo extends Base
 {

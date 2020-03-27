@@ -1,9 +1,9 @@
 <?php
 
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Tests\Entities;
+namespace VideoUrlAnalyzer\Tests\Entities;
 
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Tests\Base;
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\Instagram;
+use VideoUrlAnalyzer\Tests\Base;
+use VideoUrlAnalyzer\Entities\Instagram;
 
 class InstagramTest extends Base
 {

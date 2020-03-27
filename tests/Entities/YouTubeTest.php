@@ -1,9 +1,9 @@
 <?php
 
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Tests\Entities;
+namespace VideoUrlAnalyzer\Tests\Entities;
 
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Tests\Base;
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\YouTube;
+use VideoUrlAnalyzer\Tests\Base;
+use VideoUrlAnalyzer\Entities\YouTube;
 
 class YouTubeTest extends Base
 {

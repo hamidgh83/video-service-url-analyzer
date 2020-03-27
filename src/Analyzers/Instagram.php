@@ -1,7 +1,7 @@
 <?php
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Analyzers;
+namespace VideoUrlAnalyzer\Analyzers;
 
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\Instagram as InstagramEntity;
+use VideoUrlAnalyzer\Entities\Instagram as InstagramEntity;
 
 class Instagram extends Base
 {

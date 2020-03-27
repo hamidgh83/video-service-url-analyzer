@@ -1,9 +1,9 @@
 <?php
 
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Tests\Entities;
+namespace VideoUrlAnalyzer\Tests\Entities;
 
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Tests\Base;
-use TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\Vimeo;
+use VideoUrlAnalyzer\Tests\Base;
+use VideoUrlAnalyzer\Entities\Vimeo;
 
 class VimeoTest extends Base
 {

@@ -1,14 +1,14 @@
 {
-    "name": "takaaki-mizuno/video-service-url-analyzer",
+    "name": "video-service-url-analyzer",
     "description": "Video URL analyzer for famous video sharing services",
-    "keywords": ["video", "youtube", "vimeo"],
+    "keywords": ["video", "youtube", "vimeo", "aparat"],
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/takaaki-mizuno/video-service-url-analyzer",
     "authors": [
       {
-        "name": "Takaaki Mizuno",
-        "email": "takaaki.mizuno@gmail.com"
+        "name": "Hamid Ghorashi",
+        "email": "h.ghorashi@gmail.com"
       }
     ],
 	"require": {
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "TakaakiMizuno\\VideoServiceUrlAnalyzer\\": "src"
+            "VideoUrlAnalyzer\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TakaakiMizuno\\VideoServiceUrlAnalyzer\\Tests\\": "tests"
+            "VideoUrlAnalyzer\\Tests\\": "tests"
         }
     }
 

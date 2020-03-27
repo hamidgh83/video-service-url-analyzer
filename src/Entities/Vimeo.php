@@ -1,5 +1,5 @@
 <?php
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Entities;
+namespace VideoUrlAnalyzer\Entities;
 
 class Vimeo extends Base
 {

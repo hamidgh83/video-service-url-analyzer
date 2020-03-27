@@ -1,8 +1,8 @@
 <?php
 
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Tests;
+namespace VideoUrlAnalyzer\Tests;
 
-use TakaakiMizuno\VideoServiceUrlAnalyzer\VideoServiceUrlAnalyzer;
+use VideoUrlAnalyzer\VideoServiceUrlAnalyzer;
 
 class VideoServiceUrlAnalyzerTest extends Base
 {
@@ -20,7 +20,7 @@ class VideoServiceUrlAnalyzerTest extends Base
         foreach ($urls as $url) {
             $video = $analyzer->analyze($url);
 
-            $this->assertInstanceOf('TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\YouTube', $video,
+            $this->assertInstanceOf('VideoUrlAnalyzer\Entities\YouTube', $video,
                 "$url is not detected");
             $this->assertEquals('YouTube', $video->getServiceName());
             $this->assertEquals('8UVNT4wvIGY', $video->getId());
@@ -33,7 +33,6 @@ class VideoServiceUrlAnalyzerTest extends Base
             $this->assertGreaterThan(0, $video->getHeight());
             $this->assertGreaterThan(0, $video->getThumbnailWidth());
             $this->assertGreaterThan(0, $video->getThumbnailHeight());
-
         }
     }
 
@@ -50,7 +49,7 @@ class VideoServiceUrlAnalyzerTest extends Base
         foreach ($urls as $url) {
             $video = $analyzer->analyze($url);
 
-            $this->assertInstanceOf('TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\Vimeo', $video,
+            $this->assertInstanceOf('VideoUrlAnalyzer\Entities\Vimeo', $video,
                 "$url is not detected");
             $this->assertEquals('Vimeo', $video->getServiceName());
             $this->assertEquals('137221490', $video->getId());

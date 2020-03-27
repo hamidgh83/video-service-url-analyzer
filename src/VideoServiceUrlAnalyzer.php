@@ -1,24 +1,26 @@
 <?php
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer;
+namespace VideoUrlAnalyzer;
 
 class VideoServiceUrlAnalyzer
 {
     protected static $analyzers = [
-        '\TakaakiMizuno\VideoServiceUrlAnalyzer\Analyzers\Vimeo',
-        '\TakaakiMizuno\VideoServiceUrlAnalyzer\Analyzers\YouTube',
+        '\VideoUrlAnalyzer\Analyzers\Vimeo',
+        '\VideoUrlAnalyzer\Analyzers\YouTube',
+        // '\VideoUrlAnalyzer\Analyzers\Instagram',
+        // '\VideoUrlAnalyzer\Analyzers\Aparat',
     ];
 
     /**
-     * @param string                                                       $url
-     * @param \TakaakiMizuno\VideoServiceUrlAnalyzer\Analyzers\Base[]|null $analyzers
+     * @param string                                  $url
+     * @param \VideoUrlAnalyzer\Analyzers\Base[]|null $analyzers
      *
-     * @return \TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\Base|null
+     * @return \VideoUrlAnalyzer\Entities\Base|null
      */
     public function analyze($url, $analyzers = null)
     {
         $analyzers = empty($analyzers) ? static::$analyzers : $analyzers;
         foreach ($analyzers as $analyzer) {
-            /** @var \TakaakiMizuno\VideoServiceUrlAnalyzer\Analyzers\Base $instance */
+            /** @var \VideoUrlAnalyzer\Analyzers\Base $instance */
             $instance = new $analyzer();
             $video    = $instance->analyze($url);
             if (!empty($video)) {

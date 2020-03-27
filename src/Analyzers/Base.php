@@ -1,5 +1,5 @@
 <?php
-namespace TakaakiMizuno\VideoServiceUrlAnalyzer\Analyzers;
+namespace VideoUrlAnalyzer\Analyzers;
 
 abstract class Base
 {
@@ -11,7 +11,7 @@ abstract class Base
      *
      * @param string $url Video Page URL
      *
-     * @return \TakaakiMizuno\VideoServiceUrlAnalyzer\Entities\Base|null
+     * @return \VideoUrlAnalyzer\Entities\Base|null
      */
     abstract public function analyze($url);
 
