@@ -7,7 +7,7 @@ class VideoServiceUrlAnalyzer
         '\VideoUrlAnalyzer\Analyzers\Vimeo',
         '\VideoUrlAnalyzer\Analyzers\YouTube',
         // '\VideoUrlAnalyzer\Analyzers\Instagram',
-        // '\VideoUrlAnalyzer\Analyzers\Aparat',
+        '\VideoUrlAnalyzer\Analyzers\Aparat',
     ];
 
     /**
